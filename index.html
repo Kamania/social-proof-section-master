@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <!-- displays site properly based on user's device -->
 
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+            href="./images/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+            type="image/png"
     />
 
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Frontend Mentor | Social proof section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
     </style>
-  </head>
-  <body>
-    10,000+ of our users love our products.
+</head>
+<body>
+<header>
+    <h1 class="product title">10,000+ of our users love our products.</h1>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <p class="product-description">
+        We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.
+    </p>
+</header>
+<section>
+    <div class="rate-card">
+        <img src="images/icon-star.svg" alt="rate star icon">
+        <span class="rate-card-description">Rated 5 Stars in Reviews</span>
     </div>
-  </body>
+    <div class="rate-card">
+        <img src="images/icon-star.svg" alt="rate star icon">
+        <span class="rate-card-description">Rated 5 Stars in Report Guru</span>
+    </div>
+    <div class="rate-card">
+        <img src="images/icon-star.svg" alt="rate star icon">
+        <span class="rate-card-description">Rated 5 Stars in BestTech</span>
+    </div>
+</section>
+<section>
+    <div class="testimonial-card">
+        <div class="user-profile">
+            <img alt="Colton profile photo" src="images/image-colton.jpg">
+            <span class="username">Colton Smith</span>
+            <span class="user-badge">Verified Buyer</span>
+        </div>
+        <p class="user-testimonial">
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+        </p>
+    </div>
+
+    <div class="testimonial-card">
+        <div class="user-profile">
+            <img alt="Irene profile photo" src="images/image-irene.jpg">
+            <span class="username">Irene Roberts</span>
+            <span class="user-badge">Verified Buyer</span>
+        </div>
+        <p class="user-testimonial">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+    </div>
+
+    <div class="testimonial-card">
+        <div class="user-profile">
+            <img alt="anne profile photo" src="images/image-anne.jpg">
+            <span class="username">Anne Wallace</span>
+            <span class="user-badge">Verified Buyer</span>
+        </div>
+        <p class="user-testimonial">
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+    </div>
+</section>
+
+<div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+    >. Coded by <a href="#">Chiira</a>.
+</div>
+</body>
 </html>
